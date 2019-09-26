@@ -4,7 +4,7 @@
 var Trace = require('..')
 var chalk = require('chalk')
 
-var trace = new Trace(process.argv[2])
+var trace = new Trace(process.argv[2], null, process.argv[3])
   .once('error', function (error) {
     var url = error.url ? chalk.gray('- ' + error.url) : ''
     console.log(chalk.red('ERROR'), error.message, url)
