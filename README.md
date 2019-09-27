@@ -35,7 +35,7 @@ var TraceRoute = require('http-traceroute')
 ```
 
 ```js
-var trace = new TraceRoute('https://github.com', null, 'Bearer BLAHBLAHBLAHBLAH')
+var trace = new TraceRoute('https://github.com', 'Bearer BLAHBLAHBLAHBLAH')
 
 trace.on('readable', function () {
   var hop = null
