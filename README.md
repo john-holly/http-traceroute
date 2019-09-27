@@ -25,7 +25,7 @@ npm install --save http-traceroute
 ## CLI Usage
 
 ```
-http-traceroute [url]
+http-traceroute [url] [authorization header value]
 ```
 
 ## Module Usage
@@ -35,7 +35,7 @@ var TraceRoute = require('http-traceroute')
 ```
 
 ```js
-var trace = new TraceRoute('https://github.com')
+var trace = new TraceRoute('https://github.com', null, 'Bearer BLAHBLAHBLAHBLAH')
 
 trace.on('readable', function () {
   var hop = null
