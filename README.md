@@ -1,7 +1,8 @@
 # http-traceroute
 
 A command line tool for following and showing HTTP redirects for a given
-URL. Similar to the `traceroute` unix tool.
+URL. Similar to the `traceroute` unix tool. Forked from original to support
+authenticated requests.
 
 ![screen shot 2016-02-22 at 12 43 13](https://cloud.githubusercontent.com/assets/10602/13217317/ec317342-d961-11e5-9810-9773569387e0.png)
 
